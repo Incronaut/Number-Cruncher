@@ -1,16 +1,12 @@
-package com.hackpundit.www.assignment1;
+package com.incronaut.www.numbercruncher;
 
 
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,26 +23,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(com.incronaut.www.numbercruncher.R.layout.activity_main);
 
-        button0 = (Button) findViewById(R.id.button0);
-        button1 = (Button) findViewById(R.id.button1);
-        button2 = (Button) findViewById(R.id.button2);
-        button3 = (Button) findViewById(R.id.button3);
-        button4 = (Button) findViewById(R.id.button4);
-        button5 = (Button) findViewById(R.id.button5);
-        button6 = (Button) findViewById(R.id.button6);
-        button7 = (Button) findViewById(R.id.button7);
-        button8 = (Button) findViewById(R.id.button8);
-        button9 = (Button) findViewById(R.id.button9);
-        button10 = (Button) findViewById(R.id.button10);
-        buttonAdd = (Button) findViewById(R.id.buttonadd);
-        buttonSub = (Button) findViewById(R.id.buttonsub);
-        buttonMul = (Button) findViewById(R.id.buttonmul);
-        buttonDivision = (Button) findViewById(R.id.buttondiv);
-        buttonC = (Button) findViewById(R.id.buttonC);
-        buttonEqual = (Button) findViewById(R.id.buttoneql);
-        edt1 = (EditText) findViewById(R.id.edt1);
+        button1 = (Button) findViewById(com.incronaut.www.numbercruncher.R.id.button1);
+        button2 = (Button) findViewById(com.incronaut.www.numbercruncher.R.id.button2);
+        button3 = (Button) findViewById(com.incronaut.www.numbercruncher.R.id.button3);
+        button4 = (Button) findViewById(com.incronaut.www.numbercruncher.R.id.button4);
+        button5 = (Button) findViewById(com.incronaut.www.numbercruncher.R.id.button5);
+        button6 = (Button) findViewById(com.incronaut.www.numbercruncher.R.id.button6);
+        button7 = (Button) findViewById(com.incronaut.www.numbercruncher.R.id.button7);
+        button8 = (Button) findViewById(com.incronaut.www.numbercruncher.R.id.button8);
+        button9 = (Button) findViewById(com.incronaut.www.numbercruncher.R.id.button9);
+        edt1 = (EditText) findViewById(com.incronaut.www.numbercruncher.R.id.edt1);
 
 
         button1.setOnClickListener(new View.OnClickListener() {

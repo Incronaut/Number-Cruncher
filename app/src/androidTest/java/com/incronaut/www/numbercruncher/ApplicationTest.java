@@ -1,4 +1,4 @@
-package com.hackpundit.www.assignment1;
+package com.incronaut.www.numbercruncher;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
