@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.hackpundit.www.assignment1"
+        applicationId "com.incronaut.www.numbercruncher"
         minSdkVersion 9
         targetSdkVersion 23
         versionCode 1
