@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Number Cruncher</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="original">Default</string>
     <string name="action_settings">Settings</string>
 </resources>

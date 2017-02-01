@@ -5,15 +5,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     Button button1 , button2 , button3 , button4 , button5 , button6 ,
             button7 , button8 , button9 ;
 
-    EditText edit1 ;
-    Random rand = new Random();
-    int n = rand.nextInt(8) + 1;
+
+    TextView display1, edit1;
 
     float mValueOne , mValueTwo ;
 
@@ -33,72 +33,81 @@ public class MainActivity extends AppCompatActivity {
         button7 = (Button) findViewById(R.id.button7);
         button8 = (Button) findViewById(R.id.button8);
         button9 = (Button) findViewById(R.id.button9);
-        edit1 = (EditText) findViewById(R.id.edit1);
-
+        display1 = (TextView) findViewById(R.id.display1);
+        edit1 = (TextView) findViewById(R.id.edit1);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edit1.setText(edit1.getText()+"1");
+                edit1.setText("1");
+                checker(display1.getText(), edit1.getText());
             }
         });
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edit1.setText(edit1.getText()+"2");
+                edit1.setText("2");
+                checker(display1.getText(), edit1.getText());
             }
         });
 
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edit1.setText(edit1.getText()+"3");
+                edit1.setText("3");
+                checker(display1.getText(), edit1.getText());
             }
         });
 
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edit1.setText(edit1.getText()+"4");
+                edit1.setText("4");
+                checker(display1.getText(), edit1.getText());
             }
         });
 
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edit1.setText(edit1.getText()+"5");
+                edit1.setText("5");
+                checker(display1.getText(), edit1.getText());
             }
         });
 
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edit1.setText(edit1.getText()+"6");
+                edit1.setText("6");
+                checker(display1.getText(), edit1.getText());
             }
         });
 
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edit1.setText(edit1.getText()+"7");
+                edit1.setText("7");
+                checker(display1.getText(), edit1.getText());
             }
         });
 
         button8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edit1.setText(edit1.getText()+"8");
+                edit1.setText("8");
+                checker(display1.getText(), edit1.getText());
             }
         });
 
         button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edit1.setText(edit1.getText()+"9");
+                edit1.setText("9");
+                checker(display1.getText(), edit1.getText());
             }
         });
-
+        numberStarter();
         /*button0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -190,5 +199,23 @@ public class MainActivity extends AppCompatActivity {
                 edit1.setText(edit1.getText()+".");
             }
         });*/
+    }
+
+    public java.lang.CharSequence numberStarter() {
+        Random rand = new Random();
+        int randn = rand.nextInt(8) + 1;
+        String randnstring = Integer.toString(randn);
+        ((TextView)findViewById(R.id.display1)).setText(randnstring);
+        return display1.getText();
+    }
+
+    public void checker(java.lang.CharSequence a, java.lang.CharSequence b){
+        if(a == b){
+            numberStarter();
+            ((TextView)findViewById(R.id.answer)).setText("Right!");
+        }
+        else{
+            ((TextView)findViewById(R.id.answer)).setText("Wrong!");
+        }
     }
 }

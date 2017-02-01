@@ -21,14 +21,23 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@id/fakeView"
         android:layout_alignParentLeft="true"
-        android:id="@+id/display1"/>
+        android:id="@+id/display1"
+        android:hint="@string/original"/>
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/fakeView"
         android:layout_alignParentRight="true"
         android:id="@+id/edit1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/display1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="54dp"
+        android:id="@+id/answer"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -37,7 +46,7 @@
         android:text="1"
         android:id="@+id/button1"
         android:layout_marginTop="194dp"
-        android:layout_below="@+id/edt1"
+        android:layout_below="@+id/edit1"
         android:layout_toStartOf="@+id/button4"
         android:layout_toLeftOf="@+id/button4"
         android:layout_alignRight="@+id/button4"
